@@ -18,20 +18,20 @@ Task | Do |
 
 ## DOC
 ### 1. File or directory
-.github -> folder z plikiem z definicją CI. <br>
-loadBalancer -> folder z definicją nginx wraz z certyfikatem. <br>
-tomcat -> folder z definicją servera z prostą stroną. <br>
-docker-compose.yaml -> plik z uruchomieniem zadania. <br>
-Makefile -> dyrektywy uruchamiające. <br>
-README.md -> dokumentacja i zadania. <br>
+.github -> Folder with CI definition files. <br>
+loadBalancer -> Folder with nginx definition along with certificate. <br>
+tomcat -> Folder with server definition with simple interface. <br>
+docker-compose.yaml -> Task execution file. <br>
+Makefile -> Launchers. <br>
+README.md -> Documentation and tasks. <br>
 
 ### 2. Use to start
-Użyj komendy
+Use the command
 ```
 make start
 ```
-w folderze z plikiem Makefile.
-Wersja obrazu uruchomionego jest podmieniana w pliku docker-compose.yaml w trzech miejscach oznaczonych <VERSION>.
+in the folder with the makefile.
+The version of the running image is replaced in the docker-compose.yaml file in three places marked <VERSION>.
 ```
 loadBalancer:
   image: acnologia606/nginx:<VERSION>
@@ -47,14 +47,14 @@ tomcat2:
   image: acnologia606/tomcat:<VERSION>
 ```
 ### 2. Use to stop
-Użyj komendy
+Use the command
 ```
 make stop
 ```
-w folderze z plikiem Makefile.
+in the folder with the makefile.
 
 ### 3. Budowanie i dodaweanie do repopzytorium obrazów 
-Całość zaczyna się przy dodaniu commita do projektu.
-Link do repozytorium obrazów:
+It all starts with adding a commit to the project.
+Image repository link:
 nginx -> https://hub.docker.com/repository/docker/acnologia606/nginx/general <br>
 tomcat ->  https://hub.docker.com/repository/docker/acnologia606/tomcat/general <br>

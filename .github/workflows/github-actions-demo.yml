@@ -1,6 +1,10 @@
 name: Githab action
 run-name: Building and push two images
-on: [push]
+on:
+  push:
+    paths:
+    - 'loadBalancer/*'
+    - 'tomcat/*'
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest

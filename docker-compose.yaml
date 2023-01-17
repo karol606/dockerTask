@@ -1,5 +1,5 @@
 loadBalancer:
-  image: acnologia606/nginx:9cff58b23468fd475c4532bd999e6c6058a89ca8
+  image: acnologia606/nginx:8ed8f2d603558c1f36d9d694dc6a9fb4afee8a01
   ports:
    - "443:443"
    - "80:80"
@@ -7,6 +7,6 @@ loadBalancer:
    - tomcat1:tomcat1
    - tomcat2:tomcat2
 tomcat1:
-  image: acnologia606/tomcat:9cff58b23468fd475c4532bd999e6c6058a89ca8
+  image: acnologia606/tomcat:8ed8f2d603558c1f36d9d694dc6a9fb4afee8a01
 tomcat2:
-  image: acnologia606/tomcat:9cff58b23468fd475c4532bd999e6c6058a89ca8
+  image: acnologia606/tomcat:8ed8f2d603558c1f36d9d694dc6a9fb4afee8a01
